@@ -1,6 +1,6 @@
 async function searchMovies() {
     const query = document.getElementById("search-box").value;
-    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&query=${query}`);
+    const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=8872a5e35bf341095d8158d8e449fa67&query=${query}`);
     const data = await response.json();
 
     const resultsContainer = document.getElementById("search-results");
