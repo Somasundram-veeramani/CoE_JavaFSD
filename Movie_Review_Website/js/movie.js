@@ -2,7 +2,7 @@ async function getMovieDetails() {
     const params = new URLSearchParams(window.location.search);
     const movieId = params.get("id");
 
-    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=YOUR_API_KEY`);
+    const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=8872a5e35bf341095d8158d8e449fa67`);
     const movie = await response.json();
 
     document.getElementById("movie-details").innerHTML = `
